@@ -1,0 +1,19 @@
+{
+  "name": "@cag-group/basic-jwt-auth",
+  "version": "0.0.1",
+  "description": "A simple JWT based authentication library, primarily to be used as an alternative to shared key basic auth for service-to-service.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cag-group/basic-jwt-auth.git"
+  },
+  "author": "C.A.G Edge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cag-group/basic-jwt-auth/issues"
+  },
+  "homepage": "https://github.com/cag-group/basic-jwt-auth#readme"
+}
