@@ -1,8 +1,10 @@
 {
     "env": {
-        "node": true
+        "node": true,
+        "mocha": true
     },
     "extends": "standard",
+    "plugins": ["mocha"],
     "rules": {
         "strict": ["error", "global"],
         "space-before-function-paren": ["error", "never"]
