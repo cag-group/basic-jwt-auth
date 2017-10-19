@@ -10,10 +10,21 @@
     "type": "git",
     "url": "git+https://github.com/cag-group/basic-jwt-auth.git"
   },
-  "author": "C.A.G Edge",
+  "author": "Mikael Hallendal <mikael.hallendal@cag.se>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cag-group/basic-jwt-auth/issues"
   },
-  "homepage": "https://github.com/cag-group/basic-jwt-auth#readme"
+  "homepage": "https://github.com/cag-group/basic-jwt-auth#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
 }
