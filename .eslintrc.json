@@ -1,3 +1,10 @@
 {
-    "extends": "standard"
+    "env": {
+        "node": true
+    },
+    "extends": "standard",
+    "rules": {
+        "strict": ["error", "global"],
+        "space-before-function-paren": ["error", "never"]
+    }
 }
