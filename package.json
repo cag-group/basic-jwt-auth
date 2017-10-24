@@ -1,6 +1,6 @@
 {
   "name": "@cag-group/basic-jwt-auth",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A simple JWT based authentication library, primarily to be used as an alternative to shared key basic auth for service-to-service.",
   "main": "lib/index.js",
   "scripts": {
