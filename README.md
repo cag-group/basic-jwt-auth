@@ -36,13 +36,18 @@ exports.authtest = authProtected(ACCESS_LIST, function(req, res) {
 
 #### client.js
 ```javascript
-  const { fetchWithAuthentication } = require('@cag-group/basic-jwt-auth')
+  const { createAuthToken } = require('@cag-group/basic-jwt-auth')
+  // With node-fetch
+  const fetch = require('node-fetch')
 
   // A private key as downloaded when generating a service account key
   const key = require('private-key.json')
 
-  const authorizedFetch = fetchWithAuthentication(key.client_email, key.private_key_id, key.private_key)
-  authorizedFetch('https://auth-protected-url/') // returns a promise with the result
+  // Create a bearer token 'Bearer 12d1d...'
+  const authToken = createAuthToken(key)
+
+  // returns a promise with the result
+  fetch('https://auth-protected-url', { headers: { 'Authorization': authToken }})
 ```
 
 #### private-key.json

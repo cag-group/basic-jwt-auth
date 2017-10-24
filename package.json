@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/cag-group/basic-jwt-auth#readme",
   "dependencies": {
-    "jsonwebtoken": "^8.1.0",
-    "node-fetch": "^1.7.3"
+    "jsonwebtoken": "^8.1.0"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
