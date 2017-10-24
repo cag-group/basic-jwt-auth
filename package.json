@@ -4,7 +4,7 @@
   "description": "A simple JWT based authentication library, primarily to be used as an alternative to shared key basic auth for service-to-service.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --exit"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
     "node-fetch": "^1.7.3"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
     "eslint": "^4.9.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.8.0",
@@ -28,6 +30,7 @@
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.4",
     "mocha": "^4.0.1"
   }
 }
