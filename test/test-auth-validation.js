@@ -59,4 +59,15 @@ describe('Auth validation', function() {
         done()
       })
   })
+
+  it('should fail when the token is expired', function(done) {
+    chai.request(app)
+      .get('/')
+      .set('Authorization', createAuthToken(key, Date.now() / 1000 - 11, 10))
+      .end(function(err, res) {
+        assert(err !== null)
+        assert.equal(res.status, 401)
+        done()
+      })
+  })
 })

@@ -10,7 +10,7 @@ describe('Token creation', function() {
   })
 
   it('should create a token with the correct payload keys', function() {
-    const now = Date.now()
+    const now = Date.now() / 1000
     const token = createAuthToken(key, now, 3600)
     const decodedToken = jwt.decode(token.slice(7))
     assert.equal(decodedToken.iss, 'test@test.com')
