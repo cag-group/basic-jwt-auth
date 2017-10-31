@@ -1,12 +1,12 @@
 const createAuthToken = require('../lib/create-auth-token')
-
+const path = require('path')
 const program = require('commander')
 
 program
   .version('1.0.0')
   .arguments('<private-key-json-file>')
   .action(function(file) {
-    const key = require(file)
+    const key = require(path.resolve(file))
     const token = createAuthToken(key)
     console.log('')
     console.log('Set the "Authorization" HTTP request header to:')
