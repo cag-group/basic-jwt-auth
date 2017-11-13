@@ -70,7 +70,7 @@ exports.authtest = authProtected(ACCESS_LIST, function(req, res) {
 When testing it can sometimes be useful to be able to generate the token to be used with for example Postman. For these purposes there is a small script that outputs the token based on a private key file.
 
 ```shell
-node tools/generate-token.js <path-to-private-key.json>
+node tools/create-token.js <path-to-private-key.json>
 ```
 
 Don't forget to add the user to the access list of the service being accessed.
